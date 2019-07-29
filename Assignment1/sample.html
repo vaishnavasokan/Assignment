@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            
+            $(".btn1").click(function()
+            {
+                $("h1").show(250);
+                $("h1").css("background-color", "orange"); 
+                 
+                
+            });
+
+            $(".btn2").dblclick(function()
+            {
+                //alert("success");
+                $("h1").hide(250);
+                //$(this).css("background-color", "orange");             
+            });
+
+            $(".btn3").click(function()
+            {
+                $("h1").toggle(250);
+                  
+                
+            });
+            $(".btn4").click(function()
+            {
+                var un=$("#name").val();
+                alert(un);     
+                
+            });
+            
+
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+            <button class="btn1">Show</button>
+            <button class="btn2">Hide</button> 
+            <button class="btn3">Toggle</button> 
+            <button class="btn4">Click</button>
+            <input type="text" id="name">
+
+            <h1 id="h1" style="display: none">This is a heading</h1>
+</body>
+</html>

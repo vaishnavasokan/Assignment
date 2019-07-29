@@ -14,7 +14,7 @@ function getDetails()
     }
     
     var res = document.getElementById("result");
-    if(res.style.display=="none")
+    if(res.style.display==="none")
         res.style.display="block";  
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+    var c=0;  
+        $(document).ready(function()
+        {
+            
+            $(".btn1").click(function()
+            {
+                c=c+1;
+                if(c>=10)
+                {
+                    $(".btn1").prop('disabled',true);
+                }
+                $("#p1").text("You clicked me "+c+" times");  
+            });            
+        });
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn1">Click me</button>
+    <p id="p1">You clicked me 0 times</p>
+    
+</body>
+</html>
